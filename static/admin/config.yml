@@ -1,0 +1,21 @@
+backend:
+  name: github
+  repo: 18f/federalist-uswds-gatsby
+  base_url: https://federalistapp-staging.18f.gov
+  auth_endpoint: external/auth/github
+
+media_folder: assets/uploads
+public_folder: /images/uploads
+publish_mode: editorial_workflow
+logo_url: https://federalist.18f.gov/assets/images/federalist-logo.png
+
+collections:
+  - label: Pages
+    name: Pages
+    folder: src/pages/
+    create: true
+    fields:
+      - {label: 'Layout', name: 'layout', widget: 'hidden', default: 'post'}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Body", name: "body", widget: "markdown"}
