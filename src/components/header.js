@@ -28,7 +28,9 @@ const Header = ({ title, header }) => (
               {navGroup.items.length > 1 ? (
                 <React.Fragment>
                   <AccordionButton
-                    className={`usa-nav__link ${idx === 0 ? 'usa-current' : ''}`}
+                    className={`usa-nav__link ${
+                      idx === 0 ? 'usa-current' : ''
+                    }`}
                     controls={`extended-nav-section-${idx}`}
                   >
                     <span>{navGroup.title}</span>
