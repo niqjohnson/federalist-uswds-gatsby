@@ -12,7 +12,6 @@ const RegulationSection = ({ data }) => {
       <div className="usa-layout-docs usa-section">
         <div className="grid-container">
           <div className="grid-row grid-gap">
-            
             <RegNav />
 
             <div className="usa-layout-docs-main_content desktop:grid-col-9 usa-prose">
